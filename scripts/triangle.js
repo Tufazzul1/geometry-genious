@@ -7,9 +7,6 @@
 *step -5 : convert the vlaue to a number by using parsefloat()
  */
 
-
-
-
 function calculateTriangleArea(){
     // triangle base value
     const triangleBaseInput = document.getElementById('triangle-base');

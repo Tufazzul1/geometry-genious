@@ -65,7 +65,7 @@
                 <div class="card bg-base-100 shadow-xl">
                     <figure><img class="mt-2" src="images/rectangle.png" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Rectangle!</h2>
+                        <h2 class="card-title text-2xl">Rectangle!</h2>
                         <p class="text-xl text-center">Area (A) = w x l</p>
                         <div class="flex gap-2">
                             <!-- rectangle width -->
@@ -83,15 +83,27 @@
                         </div>
                     </div>
                 </div>
-                <!-- triangle  card -->
+
+                <!-- parallelogram  card -->
                 <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                    <figure><img class="mt-3" src="images/parallelogram.png"
                             alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title text-2xl">Parallelogram!</h2>
+                        <p class="text-xl text-center"> Area (A) : b x h </p>
+                        <div class="flex gap-2">
+                          <!-- paralllelo base  -->
+                            <input id="para-base" class="w-24 bg-gray-200 p-1 text-2xl rounded-sm" type="text" placeholder="Base">
+                            <span>cm</span>
+                            <!-- Paralello Height -->
+                            <input id="para-height" class="w-24 bg-gray-200 p-1 text-2xl rounded-sm" type="text" placeholder="Height">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p class="text-xl">Area : <span id="para-area"></span> <span>cm<sup>2</sup></span></p>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculateParaArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -131,6 +143,7 @@
 
     <script src="scripts/triangle.js"></script>
     <script src="scripts/rectangle.js"></script>
+    <script src="scripts/para.js"></script>
 </body>
 
 </html>

@@ -42,13 +42,16 @@
                     <figure><img src="images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title text-2xl">Triangle!</h2>
-                        <p class="text-center">Area (A) = 0.5 x b x h</p>
+                        <p class="text-center text-xl">Area (A) = 0.5 x b x h</p>
 
                         <div class="flex gap-2">
-                            <input class="w-24 bg-gray-200 p-1 text-2xl rounded-sm" type="text" placeholder="b">
+                            <input id="triangle-base" class="w-24 bg-gray-200 p-1 text-2xl rounded-sm" type="text" placeholder="b">
                             <span>cm</span>
-                            <input class="w-24 bg-gray-200 p-1 text-2xl rounded-sm" type="text" placeholder="h">
+                            <input id="triangle-height" class="w-24 bg-gray-200 p-1 text-2xl rounded-sm" type="text" placeholder="h">
                             <span>cm</span>
+                        </div>
+                        <div>
+                            <p class="text-xl">Area : <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions justify-end">
                             <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>

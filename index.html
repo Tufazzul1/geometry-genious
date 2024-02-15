@@ -107,30 +107,54 @@
                         </div>
                     </div>
                 </div>
-                <!-- triangle  card -->
+
+                <!-- Rhombus  card -->
                 <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                    <figure><img class="mt-2" src="images/rhombus.png"
                             alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title text-2xl">Rhombus!</h2>
+                        <p class="text-xl text-center"> Area (A) : 0.5 x d<sub>1</sub> x d <sub>2</sub></p>
+                        <div class="flex gap-2">
+                          <!-- rhombus base  -->
+                            <input id="rhombus-base" class="w-24 bg-gray-200 p-1 text-2xl rounded-sm" type="text" placeholder="Base">
+                            <span>cm</span>
+                            <!-- rhombus Height -->
+                            <input id="rhombus-height" class="w-24 bg-gray-200 p-1 text-2xl rounded-sm" type="text" placeholder="Height">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p class="text-xl">Area : <span id="rhombus-area"></span> <span>cm<sup>2</sup></span></p>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculateRhombusArea()" id="" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
-                <!-- triangle  card -->
-                <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                <!-- Pentagon  card -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure><img class="mt-2" src="images/pentagon.png"
                             alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title text-2xl">Pentagon!</h2>
+                        <p class="text-xl text-center"> Area (A) : p x b</p>
+                        <div class="flex gap-2">
+                          <!-- pentagon peremeter  -->
+                            <input id="pentagon-peremeter" class="w-24 bg-gray-200 p-1 text-2xl rounded-sm" type="text" placeholder="peremeter">
+                            <span>cm</span>
+                            <!-- pentagon Apothem -->
+                            <input id="pentagon-apothem" class="w-24 bg-gray-200 p-1 text-2xl rounded-sm" type="text" placeholder="apothem">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p class="text-xl">Area : <span id="pentagon-area"></span><span>cm<sup>2</sup></span></p>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="claculatePentagonArea()" id="" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
+                
             </div>
             <!-- Area calculation container -->
             <div class="w-96 border-2 border-gray-700 rounded-lg text-center p-4 h-96">
@@ -144,6 +168,8 @@
     <script src="scripts/triangle.js"></script>
     <script src="scripts/rectangle.js"></script>
     <script src="scripts/para.js"></script>
+    <script src="scripts/rhombus.js"></script>
+    <script src="scripts/pentagon.js"></script>
 </body>
 
 </html>
